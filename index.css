@@ -1,0 +1,775 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+html {
+    scroll-behavior: smooth !important;
+    user-select: none;
+}
+
+/* -------------WHY INFLUENCER MARKETING --------------------- */
+
+.whyIinfluencerMarketing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 50px 5px !important;
+}
+
+.WIMleft {
+    width: 40%;
+    display: grid;
+    place-items: center;
+}
+
+.WIMimgContainer {
+    width: 50%;
+    /* height: 100%; */
+    display: grid;
+}
+
+.WIMimgContainer>img {
+    width: 100%;
+    /* height: 100%; */
+    margin: 0 auto;
+    transform: rotateZ(-1.5deg);
+}
+
+.WIMright {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1% 2%;
+}
+
+.WIMright>h3 {
+    margin: unset;
+    margin-bottom: 2%;
+    padding: unset;
+    color: #1adb80;
+    width: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.WIMright>h1 {
+    margin: unset;
+    font-weight: 700;
+    color: #000;
+    text-align: left;
+    margin: 2% 0;
+    width: 90%;
+}
+
+.WIMright>p {
+    margin: unset;
+    padding: unset;
+    font-weight: 400;
+    color: #567;
+    margin-top: 2%;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.61);
+    width: 80%;
+}
+
+/* -----------------banner ---------------- */
+
+.brandCountCont {
+    width: 80%;
+    margin: 5% auto 0 auto;
+}
+
+.brandCountPara {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+    width: 90%;
+    margin: 0 auto 5% auto;
+    font-family: "Nunito", "Helvetica", "Arial", "sans-serif";
+}
+
+.brandCountPara>span {
+    color: #1adb80;
+    font-weight: 700;
+}
+
+.slider {
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    /* width: 99%; */
+}
+
+.slider .slide-track {
+    animation: scroll 30s linear infinite alternate;
+    display: flex;
+    /* width: max-content; */
+}
+
+.slider .slide-track-opposite {
+    animation: scrollOpposite 30s linear infinite alternate;
+    display: flex;
+    /* width: max-content; */
+}
+
+.slider .slide-track-opposite-3rdrow {
+    animation: scrollOpposite3rd 30s linear infinite alternate;
+    display: flex;
+    /* width: max-content; */
+}
+
+.slider .slide {
+    height: 112px;
+    width: 100%;
+    margin-right: 2rem;
+}
+
+.slide>img {
+    /* width: 100%; */
+    height: 90%;
+}
+
+.WimxMarquee {
+    background: linear-gradient(to bottom, #ffffff, #dff1e9);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(calc(-220px * 10));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes scrollOpposite {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 10));
+    }
+}
+
+@keyframes scrollOpposite3rd {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-198px * 10));
+    }
+}
+
+/* -------------------banner ends------------- */
+
+@media (max-width: 1280px) {
+    .WIMright>h1 {
+        font-size: 38px;
+    }
+    .brandCountPara {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 1222px) {
+    .WIMright>h1 {
+        font-size: 37px;
+    }
+    .brandCountPara {
+        font-size: 37px;
+    }
+}
+
+@media (max-width: 1190px) {
+    .WIMright>h1 {
+        font-size: 36px;
+    }
+    .brandCountPara {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .WIMright>h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 950px) {
+    .WIMright>h1 {
+        font-size: 35px;
+    }
+    .brandCountPara {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 925px) {
+    .WIMright>h1 {
+        font-size: 32px;
+        width: unset;
+    }
+    .WIMright>p {
+        width: unset;
+    }
+    .brandCountPara {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 850px) {
+    .WIMright>h3 {
+        font-size: 16px;
+        width: 100%;
+    }
+    #alrews {
+        width: 60%;
+    }
+    .WIMright>h1 {
+        font-size: 28px;
+    }
+    .brandCountPara {
+        font-size: 28px;
+    }
+    .WIMright>p {
+        font-size: 15px;
+        width: 95%;
+    }
+    .WIMright>h1 {
+        width: unset;
+    }
+}
+
+@media (max-width: 750px) {
+    .WIMright>h3 {
+        font-size: 18px;
+        width: 100%;
+    }
+    .WIMright>h1 {
+        font-size: 24px;
+    }
+    .brandCountPara {
+        font-size: 24px;
+    }
+    .WIMright>p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .WIMright>h3 {
+        font-size: 16px;
+        width: 100%;
+    }
+    .WIMright>p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+    .whyIinfluencerMarketing {
+        flex-direction: column;
+        padding: 20px !important;
+    }
+    .WIMleft {
+        width: 100%;
+    }
+    .WIMright {
+        width: 100%;
+        margin: 5% auto 2% auto;
+    }
+    .WIMright>h3 {
+        font-size: 25px;
+    }
+    .WIMright>h1 {
+        font-size: 35px;
+    }
+    .WIMright>p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .WIMleft {
+        width: 100%;
+    }
+    .WIMright {
+        width: 100%;
+        margin: 5% auto 2% auto;
+    }
+    .WIMright>h3 {
+        font-size: 1.2rem !important;
+        font-weight: 600;
+    }
+    .WIMright>h1 {
+        font-size: 1.8rem !important;
+        font-weight: 600 !important;
+    }
+    .brandCountPara {
+        font-size: 1.8rem !important;
+        font-weight: 600 !important;
+    }
+    .WIMright>p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 660px) {
+    #alrews {
+        width: 40%;
+    }
+}
+
+/* -------------WHY INFLUENCER MARKETING ENDS --------------------- */
+
+/* ----------------------BLOGS --------------------------- */
+
+#bloger {
+    min-height: unset;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: unset !important;
+    margin: unset !important;
+    padding: 7% 0% !important;
+    background: linear-gradient(to bottom, #fff, #dff1e9);
+}
+
+.blogLeftSide {
+    padding: unset !important;
+    margin: unset !important;
+    height: max-content;
+    padding-left: 5% !important;
+    width: 30%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.blogLeftSide>h5 {
+    color: #1adb80;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.BlogsContainer {
+    width: 86%;
+    padding: unset !important;
+    margin: unset !important;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 3% !important;
+}
+
+.readAllAboutIt {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    text-align: left;
+    margin: 2% 0;
+}
+
+.BlogP {
+    margin: unset;
+    padding: unset;
+    font-weight: 400;
+    color: #567;
+    margin: 2% 0%;
+    width: 85%;
+}
+
+.blog-btn {
+    margin-top: 5% !important;
+    outline: 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 8px 10px 10px rgb(0 0 0 / 10%);
+    font-weight: 400;
+    border: 1px solid #16b96d;
+    background: rgba(0, 0, 0, 0.07);
+    padding: 15px 20px 13px 20px;
+    text-transform: uppercase;
+    color: #222;
+    font-size: 16px;
+    text-align: center;
+    background: #1adb80;
+    margin-top: 2%;
+    user-select: none;
+    text-decoration: none !important;
+}
+
+.blog-btn>a {
+    color: #222 !important;
+}
+
+.blog-btn:active {
+    transform: translateY(5%);
+}
+
+.PrevDiv>i,
+.NxtDiv>i {
+    font-size: 5rem !important;
+    font-weight: 600;
+}
+
+.PrevDiv,
+.NxtDiv {
+    cursor: grab;
+}
+
+.NewCards {
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1) !important;
+    background: linear-gradient(to right, #ffffff, #ece9e6) !important;
+    min-height: 500px;
+}
+
+.cardImageHolder {
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.cardImageHolder>img {
+    width: 100% !important;
+    height: 350px !important;
+}
+
+.cardFooter {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-evenly;
+    align-items: flex-start !important;
+    padding: 0 3% !important;
+    min-height: 150px;
+}
+
+.cardFooter>h4 {
+    margin: unset;
+    font-weight: unset;
+    font-size: 20px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.918);
+    font-weight: 700;
+}
+
+.tags {
+    background: #56ccf2 !important;
+    background: linear-gradient(to bottom, #1adb80, #3cfaa1) !important;
+    color: #fafafa !important;
+    padding: 0.25em 0.75em !important;
+    border-radius: 1em !important;
+    font-size: 15px;
+}
+
+.DetailsContainer {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+
+.UserAvatarContainer {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 10% !important;
+    overflow: hidden !important;
+}
+
+.UserAvatarContainer>img {
+    border-radius: 50px !important;
+    background: chocolate !important;
+    width: 100% !important;
+}
+
+.useInfo {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 0 5% !important;
+}
+
+.useInfo>h5 {
+    text-align: left;
+    font-weight: unset !important;
+    letter-spacing: unset !important;
+    font-size: unset !important;
+    line-height: unset !important;
+    margin: unset !important;
+    padding: unset !important;
+    font-size: 17px !important;
+    letter-spacing: 1px !important;
+    color: rgba(0, 0, 0, 0.74) !important;
+    font-weight: 600 !important;
+}
+
+.useInfo>small {
+    font-weight: unset !important;
+    letter-spacing: unset !important;
+    font-size: unset !important;
+    line-height: unset !important;
+    margin: unset !important;
+    padding: unset !important;
+    margin-top: 2% !important;
+    font-size: 13px !important;
+    color: rgba(0, 0, 0, 0.527) !important;
+    font-weight: 400 !important;
+}
+
+.newBlog {
+    position: relative;
+}
+
+.NewBlogLogo {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+@media (max-width: 1286px) {
+    .index-blog-body>p {
+        font-size: 1.1rem !important;
+    }
+}
+
+@media (max-width: 1085px) {
+    .item-box-blog-image>img {
+        height: 40vh !important;
+    }
+}
+
+@media (max-width: 960px) {
+    .BlogP {
+        font-size: 1rem;
+    }
+    .blogLeftSide {
+        width: 30%;
+    }
+    #bloger {
+        /* height: 80vh; */
+        padding: 4% 0 !important;
+    }
+    .index-blog-body>p {
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 860px) {
+    .item-box-blog-image>img {
+        height: 35vh !important;
+    }
+    .BlogsContainer {
+        width: 86% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .blogLeftSide {
+        width: 48% !important;
+    }
+    .BlogsContainer {
+        width: 50% !important;
+    }
+    .blog-body h3 {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 585px) {
+    .blogLeftSide {
+        width: 44% !important;
+    }
+    .BlogsContainer {
+        width: 54% !important;
+    }
+    #bloger {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4% 0% !important;
+        height: 100vh !important;
+        box-sizing: border-box !important;
+        height: fit-content !important;
+    }
+    .blogLeftSide {
+        margin-top: 10% !important;
+        width: 100% !important;
+        margin: 0 auto;
+    }
+    .BlogsContainer {
+        width: 70% !important;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .BlogsContainer {
+        width: 98% !important;
+        margin: 0 auto;
+    }
+    .brandCountPara {
+        width: 100%;
+    }
+    .brandCountCont {
+        width: 100%;
+    }
+}
+
+@media (max-width: 412px) {
+    .blogLeftSide {
+        margin-top: 20% !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .blogLeftSide {
+        margin-top: 10% !important;
+    }
+    .BlogsContainer {
+        width: 98% !important;
+        margin: 0 auto;
+    }
+    .blogLeftSide>h5 {
+        font-size: 30px;
+    }
+    .readAllAboutIt {
+        font-size: 22px !important;
+    }
+    .BlogP {
+        font-size: 14px;
+    }
+    .NewCards {
+        min-height: 350px;
+    }
+    .cardImageHolder>img {
+        height: 230px !important;
+    }
+    .cardFooter {
+        min-height: 120px;
+    }
+    .tags {
+        font-size: 10px;
+    }
+    .cardFooter>h4 {
+        font-size: 14px;
+    }
+    .useInfo>h5 {
+        font-size: 13px !important;
+    }
+    .useInfo>small {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 350px) {
+    .brandCountPara {
+        width: 100%;
+    }
+    .blogLeftSide>h5 {
+        font-size: 20px;
+    }
+    .readAllAboutIt {
+        font-size: 18px !important;
+    }
+    .blogLeftSide {
+        margin-top: 30% !important;
+    }
+    .BlogP {
+        font-size: 14px;
+    }
+    .NewCards {
+        min-height: 350px;
+    }
+    .cardImageHolder>img {
+        height: 230px !important;
+    }
+    .cardFooter {
+        min-height: 120px;
+    }
+    .tags {
+        font-size: 10px;
+    }
+    .cardFooter>h4 {
+        font-size: 14px;
+    }
+    .useInfo>h5 {
+        font-size: 13px !important;
+    }
+    .useInfo>small {
+        font-size: 12px !important;
+    }
+}
+
+@media (min-height: 1366px) {
+    #bloger {
+        max-height: 750px !important;
+        padding: unset !important;
+        padding-top: 5% !important;
+    }
+    .item-box-blog-image>img {
+        max-height: 400px !important;
+    }
+    .index-blog-body {
+        min-height: 6vh !important;
+    }
+    .col-md-6 {
+        padding: unset !important;
+    }
+    .PrevDiv {
+        margin-right: 2%;
+    }
+    .NxtDiv {
+        margin-left: 2%;
+    }
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.ReviewBy {
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.781);
+    text-align: left;
+}
+
+.shake {
+    animation-name: shake;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-delay: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateY(0px);
+    }
+    20% {
+        transform: translateY(10px);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(30px);
+    }
+    80% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/***New Blogs****/
